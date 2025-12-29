@@ -7,3 +7,13 @@ numbers=[]
 for i in range(8):
     numbers.append(random.randint(1,101))
 print (numbers)
+biggest=numbers[0]
+smallest=numbers[0]
+for i in numbers:
+    if (i>biggest):
+        biggest=i
+print("The biggest number is:",biggest)
+for i in numbers:
+    if (i<smallest):
+        smallest=i
+print("The smallest number is:",smallest)
